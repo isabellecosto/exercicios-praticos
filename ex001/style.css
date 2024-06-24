@@ -8,11 +8,10 @@
     background-image: url(./img/designer_1.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-position-x: 100%;
     background-position-y: -10px;
     position: absolute;
-    width: 1510px;
-    height: 1161px;
+    width: 100%;
+    height: 200vh;
 }
 
 .navbar {
@@ -47,6 +46,9 @@
 .navbar button {
     background-color: #111B47;
     color: white;
+    font-size: 12px;
+    font-weight: medium;
+    line-height: 18px;
     width: 130px;
     cursor: pointer;
 }
@@ -61,13 +63,12 @@ main {
     justify-content: center;
 }
 
-.content-title {
+.content-intro {
     width: 539.37px;
     height: 421px;
-    text-align: justify;
     display: grid;
+    gap: 50px;
     margin-top: 180px;
-    gap: 100px;
     padding: 150px;
 }
 
@@ -81,38 +82,35 @@ h1 {
     
 }
 
-.title p {
+.intro p {
     color: #505F98;
     font-size: 18px;
     line-height: 30px;
 
 }
 
-.content-title button {
-    width: 189px;
+.content-intro button {
+    width: 189.13px;
     height: 36px;
     border: 3px solid #091133;
     background-color: #111B47; 
     color: white;
+    font-size: 16px;
+    font-weight: medium;
+    line-height: 26px;
     cursor: pointer;
 }
 
-.content-title button:hover {
+.content-intro button:hover {
     background-color: #091133;
     color: white;
 }
 
 .content-page {
     display: flex;
-    gap: 10rem;
+    gap: 5vw;
     padding: 150px;
     margin-top: 350px;
-}
-
-.content-pages {
-    display: flex;
-    gap: 10rem;
-    padding: 150px;
 }
 
 .page {
@@ -123,13 +121,13 @@ h1 {
 .text {
     width: 540px;
     height: 204px;
-    text-align: initial;
 }
 
 .text h2 {
     font-size: 36px;
-    font-weight: Medium;
+    font-weight: medium;
     line-height: 48px;
+    padding-bottom: 12px;
     color: #091133;
 }
 
@@ -137,27 +135,13 @@ h1 {
     font-size: 16px;
     line-height: 26px;
     color: #6F7CB2;
-    padding-top: 16px;
+    padding-bottom: 10px;
 }
 
-.text button {
-    width: 150px;
-    height: 32px;
-    border: 3px solid #091133;
-    background-color: #111B47;
-    color: white;
-    cursor: pointer;
-    margin-top: 80px;
-}
-
-.text button:hover {
-    background-color: #091133;
-    color: white;
-}
 
 .content-info {
     display: flex;
-    gap: 2rem;
+    gap: 20px;
 }
 
 .info {
@@ -190,19 +174,60 @@ h1 {
     height: 524.31;
 }
 
+.benefits {
+    display: flex;
+    gap: 10rem;
+    padding: 150px;
+}
+
+.benefits-content {
+    width: 540px;
+    height: 204px;
+    text-align: initial;
+}
+
+.benefits-content h2 {
+    font-size: 36px;
+    font-weight: Medium;
+    line-height: 48px;
+    color: #091133;
+}
+
+.benefits-content p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;
+    padding-top: 16px;
+}
+
+.benefits-content button {
+    width: 150px;
+    height: 32px;
+    border: 3px solid #091133;
+    background-color: #111B47;
+    color: white;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.benefits-content button:hover {
+    background-color: #091133;
+    color: white;
+}
+
 .prices {
     background-image: url(./img/Rectangle.png);
     background-repeat: no-repeat;
     padding-left: 100px;
     text-align: center;
-    background-size: 1700px 1500px;
+    background-size: 100vw 1500px;
     padding-top: 200px;
 }
 
 .prices-info {
-    width: 600px;
+    width: 50vw;
     height: 116.31px;
-    padding-left: 400px;
+    padding-left: 250px;
     padding-bottom: 50px;
 }
 
@@ -224,7 +249,7 @@ h1 {
 .price {
     width: 350px;
     height: 66px;
-    padding-left: 520px;
+    padding-left: 420px;
     padding-bottom: 50px;
 }
 
@@ -246,7 +271,7 @@ h1 {
 .end {
     width: 350px;
     height: 66px;
-    padding-left: 525px;
+    padding-left: 420px;
     padding-bottom: 250px;
 }
 
