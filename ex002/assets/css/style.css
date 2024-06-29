@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+}
+
+.wrapper {
+    @media (min-width: 481px) and (max-width: 768px) {
+    background-image: url(./../imagens/Ellipse\ 1.png);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    }
+}
+
+.enterprise {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -6%;
+}
+
+.button-menu{
+    @media (min-width: 481px) and (max-width: 768px) {
+        width: 24px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.button-menu img {
+    @media (min-width: 481px) and (max-width: 768px) {
+        width: 24px;
+        height: 16px;
+    }
+}
+
+.button-menu p {
+    @media (min-width: 481px) and (max-width: 768px) {
+        width: 24px;
+        font-family: "Inter", sans-serif;
+        font-size: 8px;
+        line-height: 8px;
+    }
+}
+
+.content-page {
+    display: grid;
+    text-align: center;
+}
+
+.content-page a {
+    @media (min-width: 481px) and (max-width: 768px) {
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        line-height: 13px;
+        background-color: #F2F9EB;
+        color: #35414B;
+        padding: 5px 15px;
+        border-radius: 50px;
+    }
+}
+
+.content-page .page article {
+    @media (min-width: 481px) and (max-width: 768px) {
+    width: 318px;
+    height: 120px;
+    padding-top: 30px;
+    display: grid;
+    margin: auto;
+    }
+}
+
+.content-page .page article h1 {
+    @media (min-width: 481px) and (max-width: 768px) {
+        font-family: "Inter", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
+
+.content-page .page article p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E5A65;
+    margin-top: 10px;
+}
+
+.content-page .page .dados {
+    @media (min-width: 481px) and (max-width: 768px) {
+    width: 318px;
+    height: 112px;
+    display: grid;
+    padding-top: 100px;
+    margin: auto;
+    }
+}
+
+.content-page .page .dados button {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #794CFF;
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.content-page .page .dados input {
+    border: 1px solid #E1E5EA;
+    border-radius: 10px;
+}
+
+.content-page .page .dados ::placeholder {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    line-height: 16px;
+    color: #97A5B5;
+}
+
+.page .grafico img {
+    @media (min-width: 481px) and (max-width: 768px) {
+    width: 384px;
+    height: 273.29px;
+    margin: auto;
+    box-shadow: 10px 10px 10px #4e5a652f ;
+    margin-bottom: 20px;
+    }
+}
+
+.content-page .page .parcerias p {
+    @media (min-width: 481px) and (max-width: 768px){
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    line-height: 11px;
+    color: #4E5A65;
+    padding-bottom: 20px;
+    }
+}
+
+.content-page .page .parcerias img {
+    @media (min-width: 481px) and (max-width: 768px) {
+    width: 317.17px;
+    height: 18.28px;
+    }
+}
+
+
+
+
