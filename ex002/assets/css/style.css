@@ -3,29 +3,112 @@
     padding: 0;
 }
 
-header nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-}
-
 .wrapper {
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 1281px) {
+        background-image: url(./../imagens/Ellipse\ maior.png);
+        background-size: 100% 1000px;
+        background-repeat: no-repeat;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
     background-image: url(./../imagens/Ellipse\ 1.png);
-    background-size: 100% 80%;
+    background-size: 100% 650px;
     background-repeat: no-repeat;
     }
 }
 
-.enterprise {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 20px;
-        line-height: 20px;
-        letter-spacing: -6%;
+header {
+    @media (min-width: 1281px) {
+    display: flex;
+    margin-left: -8%;
+}
 }
 
-.button-menu{
-    @media (min-width: 481px) and (max-width: 768px) {
+.nav-mobile {
+    @media (min-width: 1281px) {
+        visibility: hidden;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+
+.enterprise {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -6%;
+}
+
+.nav-desktop {
+    @media (min-width: 1281px) {
+        width: 1109px;
+        height: 48px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 233px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        visibility: hidden;
+    }
+}
+.nav-desktop .menu {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-desktop .menu select {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    line-height: 16px;
+    color: #35414B;
+    border-color: transparent;
+}
+
+.nav-desktop .menu-desktop {
+    display: flex;
+    gap: 95px;
+}
+
+.nav-desktop .menu-desktop a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    align-content: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #35414B;
+}
+
+.nav-desktop .menu-desktop .login {
+    display: flex;
+    gap: 16px;
+    width: 230px;
+    height: 48px;
+}
+
+.nav-desktop .menu-desktop .login button {
+    background-color: #ECE5FF;
+    color: #794CFF;
+    width: 168px;
+    height: 48px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: medium;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.button-menu {
+    @media (min-width: 1281px) {
+        visibility: hidden;
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px) {
         width: 24px;
         height: 30px;
         background-color: transparent;
@@ -34,14 +117,14 @@ header nav {
 }
 
 .button-menu img {
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 481px) and (max-width: 1024px) {
         width: 24px;
         height: 16px;
     }
 }
 
 .button-menu p {
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 481px) and (max-width: 1024px) {
         width: 24px;
         font-family: "Inter", sans-serif;
         font-size: 8px;
@@ -52,23 +135,70 @@ header nav {
 .content-page {
     display: grid;
     text-align: center;
+    @media (min-width: 1281px) {
+        margin-top: 100px;
+    }
 }
 
-.content-page a {
-    @media (min-width: 481px) and (max-width: 768px) {
+.content-page .page .promo {
+    @media (min-width: 1281px) { 
+        margin-bottom: 30px;
+    }
+}
+
+.content-page .page .promo #save-promo {
+    @media (min-width:1281px) {
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 16px;
+        background-color: #81C43B;
+        color: #ffffff;
+        padding: 5px 10px;
+        border-radius: 50px;
+        position: relative;
+        right: -15px;
+        
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.content-page .page .promo #promotion {
+    @media (min-width: 1281px) {
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        background-color: #F2F9EB;
+        color: #35414B;
+        padding: 5px 15px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
         text-decoration: none;
         font-family: "Inter", sans-serif;
         font-size: 13px;
         line-height: 13px;
         background-color: #F2F9EB;
         color: #35414B;
-        padding: 5px 15px;
+        padding: 5px 10px;
         border-radius: 50px;
     }
 }
 
 .content-page .page article {
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 1281px){
+        width: 760px;
+        height: 252px;
+        margin: auto;
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px) {
     width: 318px;
     height: 120px;
     padding-top: 30px;
@@ -78,7 +208,15 @@ header nav {
 }
 
 .content-page .page article h1 {
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 72px;
+        color: #35414B;
+        padding-bottom: 24px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
         font-family: "Inter", sans-serif;
         font-size: 32px;
         font-weight: 600;
@@ -92,10 +230,27 @@ header nav {
     line-height: 24px;
     color: #4E5A65;
     margin-top: 10px;
+    @media (min-width: 1281px) {
+        margin: auto;
+        width: 505px;
+        height: 48px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 318px;
+        height: 72px;
+        margin: auto;
+    }
 }
 
 .content-page .page .dados {
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 1281px) {
+        width: 486px;
+        height: 52px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
     width: 318px;
     height: 112px;
     display: grid;
@@ -105,18 +260,51 @@ header nav {
 }
 
 .content-page .page .dados button {
+    @media (min-width: 1281px) {
+        width: 164px;
+        height: 53px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        background-color: #794CFF;
+        color: white;
+        border-color: transparent;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: relative;
+        left: -5px;
+        cursor: pointer;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
     margin-top: 5px;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 500;
     background-color: #794CFF;
     color: white;
     border-color: transparent;
     border-radius: 10px;
+    }
 }
 
 .content-page .page .dados input {
-    border: 1px solid #E1E5EA;
-    border-radius: 10px;
+    @media (min-width: 1281px) { 
+        width: 322px;
+        height: 52px;
+        border: 1px solid #E1E5EA;
+        background-color: #ffffff;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        border: 1px solid #E1E5EA;
+        border-radius: 10px;
+    }
+}
+
+.content-page .page .dados input:focus {
+    outline: 1px solid #97a5b5ab;
 }
 
 .content-page .page .dados ::placeholder {
@@ -128,18 +316,56 @@ header nav {
     color: #97A5B5;
 }
 
-.page .grafico img {
-    @media (min-width: 481px) and (max-width: 768px) {
+ .grafico-mobile {
+    @media (min-width: 1281px) {
+        display: none;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
     width: 384px;
     height: 273.29px;
     margin: auto;
     box-shadow: 10px 10px 10px #4e5a652f ;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     }
 }
 
+.grafico-desktop {
+    @media (min-width: 1281px) {
+        width: 920px;
+        height: 654.29px;
+        margin: auto;
+        box-shadow: 10px 10px 10px #97a5b585;
+        margin-bottom: 100px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: none;
+    }
+}
+.content-page .page .parcerias{
+    @media (min-width: 1281px){
+        width: 941.17px;
+        height: 66.11px;
+        margin: auto;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 318px;
+        height: 45.28px;
+        margin: auto;
+        display: grid;
+        
+    }
+}
 .content-page .page .parcerias p {
-    @media (min-width: 481px) and (max-width: 768px){
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #4E5A65;
+        padding-bottom: 24px;
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px){
     font-family: "Inter", sans-serif;
     font-size: 11px;
     line-height: 11px;
@@ -148,10 +374,192 @@ header nav {
     }
 }
 
-.content-page .page .parcerias img {
-    @media (min-width: 481px) and (max-width: 768px) {
+.content-page .page .parcerias .parceiros-mobile {
+    @media (min-width: 1281px) {
+        display: none;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
     width: 317.17px;
     height: 18.28px;
+    }
+}
+
+.content-page .page .parcerias .parceiros-desktop {
+    @media (min-width: 1281px) {
+        width: 941.17px;
+        height: 26.11px;
+        margin: auto;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.timeline {
+    @media (min-width: 1281px) {
+        display: flex;
+        background-color: #FBFAFE;
+        border-top: 1px solid #F0EBFA;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 50px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: grid;
+        margin: auto;
+        margin-top: 50px;
+        padding: 50px;
+        justify-content: center;
+        background-color: #FBFAFE;
+        border-top: 1px solid #F0EBFA;
+    }
+}
+
+.timeline .timeline-desktop {
+    @media (min-width: 1281px) {
+        width: 657px;
+        height: 518px;
+        margin: auto;
+
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.timeline .timeline-mobile {
+    @media (min-width: 1281px) {
+        display: none;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 384px;
+        height: 303.09px;
+        margin: auto;
+        box-shadow: 2px 2px 2px #E1E5EA;
+    }
+}
+
+.timeline .timeline-content #timeline-topics {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        width: 372px;
+        height: 128px;
+        margin: auto;
+        text-align: left;
+        margin-top: 100px;
+        margin-bottom: 26px;
+        border-left: 10px solid #794CFF;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #F6F3FC;
+        position: relative;
+        align-content: center;
+        padding-left: 10px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        width: 384px;
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 26px;
+        padding-top: 15px;
+        border-bottom: 10px solid #794CFF;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #F6F3FC;
+    }
+}
+
+.timeline .timeline-content #timeline-topics h4 {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #35414B;
+        padding-bottom: 10px;
+        
+    }
+}
+
+.timeline .timeline-content #timeline-topics p {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E5A65;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E5A65;
+        
+    }
+}
+
+.timeline .timeline-content .content-timeline-topics .timeline-topics {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        width: 372px;
+        height: 100px;
+        margin: auto;
+        text-align: left;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #F0EBFA;
+        position: relative;
+        align-content: center;
+        padding-left: 10px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 384px;
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        background-color: transparent;
+        margin-bottom: 26px;
+        border-bottom: 1px solid #F0EBFA;
+    }
+}
+
+
+
+.timeline .timeline-content .timeline-topics h4 {
+    @media (min-width: 1281px) {
+        font-size: 18px;
+        line-height: 18px;
+        padding-bottom: 10px;
+        
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #35414B;
+        padding-bottom: 10px;
+    }
+}
+
+.timeline .timeline-content .timeline-topics p {
+    @media (min-width: 1281px) {
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E5A65;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E5A65;
     }
 }
 
