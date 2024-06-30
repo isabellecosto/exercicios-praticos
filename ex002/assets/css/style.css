@@ -761,5 +761,143 @@ header {
     }
 }
 
+.work-benefits {
+    @media (min-width: 1281px) {
+        margin-top: 300px;
+        display: flex;
+        background-color: #FBFAFE;
+        border-top: 1px solid #F0EBFA;
+        border-bottom: 1px solid #F0EBFA;
+        padding-top: 50px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        background-color: #FBFAFE;
+        margin-top: 80px;
+        display: grid;
+        text-align: center;
+        border-top: 1px solid #F0EBFA;
+        border-bottom: 1px solid #F0EBFA;
+    }
+}
+
+.work-benefits .grafico2-mobile {
+    @media (min-width: 1281px) {
+        display: none;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 450px;
+        height: 300px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}
+
+.work-benefits .grafico2-desktop {
+    @media (min-width: 1281px) {
+        width: 596px;
+        height: 404.68px;
+        margin-right: 70px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.work-benefits .container-work-benefits {
+    @media (min-width: 1281px) {
+        width: 413px;
+        height: 276px;
+        margin: auto;
+        display: grid;
+        gap: 32px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 322px;
+        height: 204px;
+        display: grid;
+        margin: auto;
+        
+    }
+}
+
+.work-benefits article {
+    @media (min-width: 1281px) {
+        width: 413px;
+        display: grid;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 322px;
+        height: 136px;
+        display: grid;
+        gap: 18px;
+        align-content: center;
+    }
+}
+
+.work-benefits article h4 {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        color: #35414B;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        width: 200px;
+        margin: auto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #35414B;
+    }
+}
+
+.work-benefits article p {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #4E5A65;
+    }
+}
+
+
+.work-benefits button {
+    @media (min-width: 1281px) {
+        width: 164px;
+        height: 52px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        color: white;
+        background-color: #796EFF;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 322px;
+        height: 52px;
+        background-color: #796EFF;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin: auto;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        margin-top: 16px;
+    }
+}
+
 
 
