@@ -768,12 +768,14 @@ header {
         background-color: #FBFAFE;
         border-top: 1px solid #F0EBFA;
         border-bottom: 1px solid #F0EBFA;
-        padding-top: 50px;
+        padding: 50px 0px;
+
     }
     @media (min-width: 481px) and (max-width: 1024px) {
         background-color: #FBFAFE;
         margin-top: 80px;
         display: grid;
+        padding: 40px 0px;
         text-align: center;
         border-top: 1px solid #F0EBFA;
         border-bottom: 1px solid #F0EBFA;
@@ -788,7 +790,6 @@ header {
         width: 450px;
         height: 300px;
         margin: auto;
-        margin-top: 40px;
         margin-bottom: 50px;
     }
 }
@@ -896,8 +897,249 @@ header {
         font-weight: 500;
         line-height: 16px;
         margin-top: 16px;
+        margin-bottom: 30px;
     }
 }
+
+.avaliation {
+    @media (min-width: 1281px) {
+        margin: 150px auto 200px auto;
+        
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+.avaliation .start-avaliation {
+    @media (min-width: 1281px) {
+        width: 543px;
+        height: 240px;
+        margin: auto;
+        display: grid;
+        gap: 48px;
+        text-align: center;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 336px;
+        margin: auto;
+        margin-bottom: 40px;
+        display: grid;
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+.avaliation .start-avaliation h4{
+    @media (min-width: 1281px) {
+        width: 430px;
+        height: 96px;
+        margin: auto;
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        color: #35414B;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        width: 250px;
+        margin: auto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #35414B;
+    }
+}
+
+
+.avaliation .start-avaliation p {
+    @media (min-width: 1281px) {
+        width: 480px;
+        height: 96px;
+        margin: auto;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #4E5A65;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #4E5A65;
+    }
+}
+
+.avaliation .user-mobile {
+    @media (min-width: 1281px) {
+        display: none !important;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 150px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.avaliation .user-mobile h6 {
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 13px;
+        color: #4E5A65;
+        padding-top: 9px;
+        padding-bottom: 8px;
+    }
+}
+
+.avaliation .user-mobile p {
+    @media (min-width: 481px) and (max-width: 1024px) {
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        line-height: 13px;
+        color: #4E5A65;
+    }
+}
+
+.avaliation .content-user-desktop {
+    @media (min-width: 1281px) {
+        display: flex;
+        justify-content: space-between;
+        width: 938px;
+        height: 76px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        gap: 116px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.avaliation .content-user-desktop .user-desktop:first-child {
+    @media (min-width: 1281px) {
+        width: 264px;
+        border-top: 4px solid #35414B;
+        padding-top: 15px;
+    }
+}
+
+.avaliation .content-user-desktop .user-desktop {
+    @media (min-width: 1281px) {
+        display: flex;
+        padding-top: 20px;
+        height: 48px;
+    }
+}
+
+.avaliation .content-user-desktop .user-desktop img {
+    @media (min-width: 1281px) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.avaliation .content-user-desktop .user-desktop article  {
+    @media (min-width: 1281px) {
+        text-align: justify;
+        align-items: center;
+        margin: 0;
+        margin-left: 16px;
+        display: grid;
+    }
+    
+}
+
+.avaliation .content-user-desktop .user-desktop article h6 {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        color: #4E5A65;
+    }
+    
+}
+
+.avaliation .content-user-desktop .user-desktop article p {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 16px;
+        color: #4E5A65;
+    }
+    
+}
+
+.avaliation .installation {
+    @media (min-width: 1281px) {
+        display: flex;
+        gap: 80px;
+        width: 1110px;
+        height: 224px;
+        background-color: #796EFF;
+        margin: auto;
+        padding: 64px 80px;
+        border-radius: 20px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: grid;
+        justify-items: center;
+        gap: 32px;
+        margin-top: 50px;
+        padding: 32px 46px;
+        background-color: #796EFF;
+    }
+}
+
+.avaliation .installation article{
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+        width: 490px;
+        height: 98px;
+        margin: auto;
+        color: white;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 322px;
+        height: 64px;
+        margin: auto;
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+}
+
+.avaliation .installation .imagens {
+    @media (min-width: 1281px) {
+        display: flex;
+        gap: 24px;
+        width: 384px;
+        height: 53.35px;
+        margin: auto;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        display: grid;
+        gap: 25px;
+    }
+}
+
+.avaliation .installation img{
+    @media (min-width: 1281px) {
+        width: 180px;
+        height: 53.35px;
+    }
+}
+
 
 
 
