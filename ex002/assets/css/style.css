@@ -69,6 +69,16 @@ header {
     border-color: transparent;
 }
 
+.nav-desktop .menu select:hover {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    line-height: 16px;
+    color: #35414B;
+    border-color: transparent;
+    border-bottom: 1px solid #4E5A65;
+}
+
 .nav-desktop .menu-desktop {
     display: flex;
     gap: 95px;
@@ -81,6 +91,16 @@ header {
     font-size: 16px;
     line-height: 16px;
     color: #35414B;
+}
+
+.nav-desktop .menu-desktop a:hover {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    align-content: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #35414B;
+    border-bottom: 1px solid #4E5A65;
 }
 
 .nav-desktop .menu-desktop .login {
@@ -101,6 +121,7 @@ header {
     font-weight: medium;
     border-color: transparent;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .button-menu {
@@ -883,6 +904,7 @@ header {
         background-color: #796EFF;
         border: 1px solid transparent;
         border-radius: 5px;
+        cursor: pointer;
     }
     @media (min-width: 481px) and (max-width: 1024px) {
         width: 322px;
@@ -1020,9 +1042,9 @@ header {
     }
 }
 
-.avaliation .content-user-desktop .user-desktop:first-child {
+.avaliation .content-user-desktop .user-desktop:hover {
     @media (min-width: 1281px) {
-        width: 264px;
+        cursor: default;
         border-top: 4px solid #35414B;
         padding-top: 15px;
     }
@@ -1139,6 +1161,176 @@ header {
         height: 53.35px;
     }
 }
+
+footer {
+    background-color: #1d2830;
+    @media (min-width: 1281px) {
+        
+    }
+    @media (min-width: 481px) and (max-width: 1024px){
+        padding: 60px 0px 20px;
+    }
+}
+
+footer .footer-mobile {
+    @media (min-width: 1281px) {
+        display: none;
+    }
+    @media (min-width: 481px) and (max-width: 1024px){
+        display: grid;
+    }
+}
+
+footer .footer-mobile button {
+    @media (min-width: 481px) and (max-width: 1024px){
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        height: 16px;
+        margin: auto;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+}
+
+footer .footer-mobile .install {
+    @media (min-width: 481px) and (max-width: 1024px){
+        width: 80vw;
+        height: 155.67px;
+        margin: auto;
+        margin-bottom: 80px;
+        display: grid;
+        gap: 16px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #f4f5f7;
+    }
+}
+
+footer .footer-mobile .copyright {
+    @media (min-width: 481px) and (max-width: 1024px){
+        border-top: 1px solid #4E5A65;
+        
+    }
+}
+
+footer .footer-mobile .copyright p {
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 80vw;
+        height: 14px;
+        margin: auto;
+        padding-top: 30px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        color: #d9dbe1;
+    }
+}
+
+footer .footer-desktop {
+    @media (min-width: 1281px) {
+        display: flex;
+        padding: 50px 100px 20px 100px;
+        gap: 200px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px){
+        display: none;
+    }
+}
+
+footer .footer-desktop .client {
+    @media (min-width: 1281px) {
+        display: grid;
+        gap: 24px;
+        width: 250px;
+    }
+    
+}
+
+footer .footer-desktop .client h5 {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    
+}
+
+footer .footer-desktop .client a {
+    @media (min-width: 1281px) {
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    
+}
+
+footer .footer-desktop .client a:hover {
+    @media (min-width: 1281px) {
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    
+}
+
+footer .footer-desktop .install-desktop {
+    @media (min-width: 1281px) {
+        display: grid;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        line-height: 16px;
+        color: #f4f5f7;
+    }
+    
+}
+
+footer .copyright-desktop {
+    @media (min-width: 1281px) {
+        border-top: 1px solid #4E5A65;
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    @media (min-width: 481px) and (max-width: 1024px){
+        display: none;
+    }
+}
+
+footer .copyright-desktop article {
+    @media (min-width: 1281px) {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        color: #d9dbe1;
+        align-content: center;
+    }
+    
+}
+
+footer .copyright-desktop .redes {
+    @media (min-width: 1281px) {
+        display: flex;
+        gap: 30px;
+        cursor: pointer;
+    }
+    
+}
+
 
 
 
