@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    width: 100%;
+    position: relative;
+}
+
 .wrapper {
     @media (min-width: 1281px) {
         background-image: url(./../imagens/Ellipse\ maior.png);
@@ -21,16 +26,20 @@ header {
     display: flex;
     margin-left: -8%;
 }
+    @media (min-width: 300px) and (max-width: 1024px) {
+    width: 100%;
+}
 }
 
 .nav-mobile {
     @media (min-width: 1281px) {
-        visibility: hidden;
+        display: none;
     }
     @media (min-width: 300px) and (max-width: 1024px) {
         display: flex;
         justify-content: space-between;
         padding: 20px;
+        
     }
 }
 
@@ -52,7 +61,7 @@ header {
         gap: 233px;
     }
     @media (min-width: 300px) and (max-width: 1024px) {
-        visibility: hidden;
+        display: none !important;
     }
 }
 .nav-desktop .menu {
@@ -126,7 +135,7 @@ header {
 
 .button-menu {
     @media (min-width: 1281px) {
-        visibility: hidden;
+        display: none !important;;
     }
 
     @media (min-width: 300px) and (max-width: 1024px) {
@@ -159,6 +168,9 @@ header {
     @media (min-width: 1281px) {
         margin-top: 100px;
     }
+    @media (min-width: 300px) and (max-width: 1024px) {
+        width: 100%;
+    }
 }
 
 .content-page .page .promo {
@@ -183,7 +195,7 @@ header {
     }
     @media (min-width: 300px) and (max-width: 1024px) {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -466,7 +478,7 @@ header {
 .timeline .timeline-content #timeline-topics {
     @media (min-width: 1281px) {
         font-family: "Inter", sans-serif;
-        width: 75vw;
+        width: 372px;
         height: 128px;
         margin: auto;
         text-align: left;
